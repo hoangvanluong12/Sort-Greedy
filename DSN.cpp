@@ -105,3 +105,78 @@ int main()
 
     return 0;
 }
+
+// Another way
+
+
+// #include <bits/stdc++.h>
+
+// using namespace std;
+
+// struct line
+// {
+//     int v, c;
+// }l[100000];
+
+// bool cmp(line a, line b)
+// {
+//     return a.v <= b.v;
+// }
+
+// int f[10000000];
+
+// int main()
+// {
+//     ios_base::sync_with_stdio(false);
+//     cin.tie(NULL);
+
+//     freopen("DSN.inp", "r", stdin);
+//     freopen("DSN.out", "w", stdout);
+
+//     int n, a, b;
+
+
+
+//     cin >> n;
+
+//     for(int i = 0; i < 2*n; i++)
+//     {
+//         cin >> l[i].v;
+//         if(i % 2 == 0)
+//             l[i].c = 1;
+//         else
+//             l[i].c = 2;
+
+//     }
+
+//     sort(l, l + 2*n, cmp);
+
+//     int res = 0, cnt = 0;
+
+//     //for(int i = 0; i < 2 * n; i++)
+//     //    cout << l[i].v << " ";
+//     int t = cnt;
+//     for(int i = 0; i < 2 * n; i++)
+//     {
+//         if(l[i].c == 1)
+//         {
+//             cnt++;
+//         }
+//         else
+//         {
+//             cnt--;
+//         }
+//         if(cnt > t)
+//         {
+//             t = cnt;
+//             res = l[i].v;
+//         }
+//     }
+
+//     cout << res;
+
+//     return 0;
+// }
+
+
+
